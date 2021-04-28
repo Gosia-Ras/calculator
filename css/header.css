@@ -1,0 +1,23 @@
+.header {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.header__paragraph {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid black;
+}
+
+.header__link {
+    text-decoration: none;
+}
