@@ -2,13 +2,14 @@ html {
     box-sizing: border-box;
 }
 
-*, 
-::after, 
-::before {
+*, ::after, ::before {
     box-sizing: inherit;
 }
 
 .body {
-    font-family: 'Lato', sans-serif;
-    background-color: rgba(247, 235, 222, 0.274);
+    background-image: url("../images/background.png");
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-color: lightgray;
+    background-position: center top;
 }

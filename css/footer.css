@@ -1,0 +1,8 @@
+.footer {
+    text-align: center;
+    background-color: rgb(138, 138, 138);
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-style: bold;
+    color: rgb(255, 251, 251)
+}

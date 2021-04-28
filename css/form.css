@@ -1,14 +1,17 @@
 .form {
     margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    
 }
 
 .form__fieldset {
-    border: 2px dashed darkslategray;
+    border: 1px solid rgb(105, 109, 109);
+
 }
 
 .form__legend {
     background-color: palevioletred;
-    color: black;
+    color: rgb(255, 251, 251);
     border-radius: 10px;
     padding: 3%;
     font-weight: bold;
@@ -18,12 +21,15 @@
     display: inline-block;
     width: 150px;
     margin-right: 5px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 12px -9px #000000;
 }
 
 .form__field {
     max-width: 60%;
-    padding: 2%;
-    border-radius: 10px;
+    padding: 10px;
 }
 
 .form__field:required {
@@ -35,8 +41,8 @@
     background-color: palevioletred;
     border: none;
     margin-top: 10px;
-    padding: 3%;
-    color: black;
+    padding: 10px;
+    color: rgb(255, 251, 251);
     border-radius: 10px;
     font-weight: bold;
 }
@@ -48,4 +54,10 @@
 
 .form__paragraph {
     font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 254, 254);
+    border: 1px solid black; 
+    box-shadow: 5px 5px 12px -9px #000000;
+    min-height: 40px;
 }
