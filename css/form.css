@@ -20,7 +20,7 @@
 .form__labelText {
     display: inline-block;
     width: 150px;
-    margin-right: 5px;
+    margin-right: 35px;
     background-color: white;
     padding: 10px;
     border: 1px solid black;
@@ -28,7 +28,7 @@
 }
 
 .form__field {
-    max-width: 60%;
+    max-width: 200px;
     padding: 10px;
 }
 
