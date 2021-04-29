@@ -1,54 +1,54 @@
-let form = document.querySelector(".js-form");
-let formInput = document.querySelector(".js-form__input");
-let formSelect = document.querySelector(".js-form__select");
-let paragraph = document.querySelector(".jsForm__paragraph--result");
-let buttonSubmit = document.querySelector(".js-form__button--submit");
-let buttonReset = document.querySelector(".js-form__button--reset");
+{
+    const convertCurrency = (amount, currency) => {
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
+        const rateEUR = 4.5481;
+        const rateCHF = 4.1279;
+        const rateUSD = 3.7978;
+        const rateGBP = 5.2235;
+        const rateRUB = 0.0502;
 
-    let euroRate = 4.5481;
-    let frankRate = 4.1279;
-    let usdRate = 3.7978;
-    let poundRate = 5.2235;
-    let rubleRate = 0.0502;
+        switch (currency) {
+            case "EUR":
+                return (amount / rateEUR);
 
-    let defaultValue = +formInput.value;
-    let currency = formSelect.value;
+            case "CHF":
+                return (amount / rateCHF);
+
+            case "USD":
+                return (amount / rateUSD);
+
+            case "GBP":
+                return (amount / rateGBP);
+
+            case "RUB":
+                return (amount / rateRUB);
+        }
+    };
 
 
-    let resultAmount;
-    let resultSentence = "You receive";
-    let resetSentence = "Form has been reset. Please enter new values.";
+    const onFormSubmit = (event) => {
+        event.preventDefault();
 
-    switch (currency) {
-        case "EUR":
-            resultAmount = (defaultValue / euroRate).toFixed(2);
-            paragraph.innerText = `${resultSentence} ${resultAmount} EUR`;
-            break;
-        case "CHF":
-            resultAmount = (defaultValue / frankRate).toFixed(2);
-            paragraph.innerText = `${resultSentence} ${resultAmount} CHF`;
-            break;
-        case "USD":
-            resultAmount = (defaultValue / usdRate).toFixed(2);
-            paragraph.innerText = `${resultSentence} ${resultAmount} USD`;
-            break;
-        case "GBP":
-            resultAmount = (defaultValue / poundRate).toFixed(2);
-            paragraph.innerText = `${resultSentence} ${resultAmount} GBP`;
-            break;
-        case "RUB":
-            resultAmount = (defaultValue / rubleRate).toFixed(2);
-            paragraph.innerText = `${resultSentence} ${resultAmount} RUB`;
-            break;
-        default:
-            paragraph.innerText = "Something went wrong, please come back later.";
-    }
 
-    form.addEventListener("reset", () => {
-        paragraph.innerText = `${resetSentence}`;
-        console.log("Form has been reset.");
-    });
-});
+        const amountElement = document.querySelector(".js-form__input");
+        const currencyElement = document.querySelector(".js-form__select");
+        const resultElement = document.querySelector(".js-form__paragraph--result");
+
+        const amount = +amountElement.value;
+        const currency = currencyElement.value;
+
+        const result = convertCurrency(amount, currency);
+
+        resultElement.innerText = `You receive ${result.toFixed(2)} ${currencyElement.value}`;
+
+    };
+
+
+    const init = () => {
+        const form = document.querySelector(".js-form");
+
+        form.addEventListener("submit", onFormSubmit)
+    };
+
+    init();
+};
