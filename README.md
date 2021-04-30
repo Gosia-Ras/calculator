@@ -1,4 +1,4 @@
-#Simple currency calculator
+# Simple currency calculator
 
 ## Demo: 
 https://gosia-ras.github.io/calculator/ <- click here to see how it works
