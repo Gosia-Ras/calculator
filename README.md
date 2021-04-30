@@ -1,17 +1,17 @@
-# calculator
-
-## Simple currency calculator
+#Simple currency calculator
 
 ## Demo: 
-https://gosia-ras.github.io/calculator/
+https://gosia-ras.github.io/calculator/ <- click here to see how it works
 
-Allows to convert currency. From PLN to: 
-- EUR
-- USD
-- GBP
-- CHF
-- RUB
+A simple tool using JavaScript to calculate currency. At the moment exchange rates are determined in JS for each currency . 
 
-The currency rate is set in JS. Next planned changes: 
-1. Allow for change between different currencies ie. EUR -> GBP etc.
-2. Pll currency rate from a website so it is updated daily.
+## Used tools:
+- HTML
+- CSS using BEM 
+- EC6+
+
+Next planned updates: 
+1. Add a reset button with *working* JS code
+2. Pull currency rates using API
+
+![Gif of an action performed on th calculator](https://raw.githubusercontent.com/Gosia-Ras/calculator/main/images/Animation.gif)
