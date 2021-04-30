@@ -26,6 +26,8 @@
     };
 
     const resetResult = () => {
+
+        const resultElement = document.querySelector(".js-form__paragraph--result");
         resultElement.innerText = "";
     };
 
@@ -55,9 +57,8 @@
     const init = () => {
         const form = document.querySelector(".js-form");
 
-        form.addEventListener("reset", resetResult);
-
         form.addEventListener("submit", onFormSubmit);
+        form.addEventListener("reset", resetResult);
 
     };
 
