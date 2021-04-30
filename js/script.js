@@ -1,4 +1,10 @@
 {
+
+    const amountElement = document.querySelector(".js-form__input");
+    const currencyElement = document.querySelector(".js-form__select");
+    const resultElement = document.querySelector(".js-form__paragraph--result");
+    
+
     const convertCurrency = (amount, currency) => {
 
         const rateEUR = 4.5481;
@@ -25,14 +31,13 @@
         }
     };
 
+    const resetResult = () => {
+        resultElement.innerText = "";
+    };
+
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-
-
-        const amountElement = document.querySelector(".js-form__input");
-        const currencyElement = document.querySelector(".js-form__select");
-        const resultElement = document.querySelector(".js-form__paragraph--result");
 
         const amount = +amountElement.value;
         const currency = currencyElement.value;
@@ -47,7 +52,11 @@
     const init = () => {
         const form = document.querySelector(".js-form");
 
+        form.addEventListener("reset", resetResult);
+
         form.addEventListener("submit", onFormSubmit)
+
+        
     };
 
     init();
