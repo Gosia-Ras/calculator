@@ -10,7 +10,7 @@ A simple tool using JavaScript to calculate currency. At the moment exchange rat
 - CSS using BEM 
 - EC6+
 
-Next planned updates: 
+## Next planned updates: 
 1. Add a reset button with *working* JS code
 2. Pull currency rates using API
 
