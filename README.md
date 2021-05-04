@@ -11,7 +11,6 @@ A simple tool using JavaScript to calculate currency. At the moment exchange rat
 - EC6+
 
 ## Next planned updates: 
-1. Add a reset button with *working* JS code
-2. Pull currency rates using API
+1. Pull currency rates using API
 
 ![Gif of an action performed on th calculator](https://raw.githubusercontent.com/Gosia-Ras/calculator/main/images/Animation.gif)
