@@ -15,6 +15,8 @@ Project was made as a part of front-end development course at YouCode.
 
 Optional: Clicking on "reset" button after calculating will reset the calculator.
 
+![Gif of an action performed on th calculator](https://raw.githubusercontent.com/Gosia-Ras/calculator/main/images/calculator-usage.gif)
+
 ## Used tools:
 - HTML
 - CSS
@@ -24,4 +26,4 @@ Optional: Clicking on "reset" button after calculating will reset the calculator
 ## Next planned updates: 
 1. Pull currency rates using API
 
-![Gif of an action performed on th calculator](https://raw.githubusercontent.com/Gosia-Ras/calculator/main/images/Animation.gif)
+
