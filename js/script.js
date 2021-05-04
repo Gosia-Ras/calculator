@@ -1,6 +1,5 @@
 {
     const convertCurrency = (amount, currency) => {
-
         const rateEUR = 4.5481;
         const rateCHF = 4.1279;
         const rateUSD = 3.7978;
@@ -26,16 +25,13 @@
     };
 
     const resetResult = () => {
-
         const resultElement = document.querySelector(".js-form__paragraph--result");
         resultElement.innerText = "";
     };
 
     const updateResult = (result, currency) => {
-
         const resultElement = document.querySelector(".js-form__paragraph--result");
         resultElement.innerText = `You receive ${result.toFixed(2)} ${currency}`;
-
     };
 
     const onFormSubmit = (event) => {
@@ -43,15 +39,12 @@
 
         const amountElement = document.querySelector(".js-form__input");
         const currencyElement = document.querySelector(".js-form__select");
-
-
         const amount = +amountElement.value;
         const currency = currencyElement.value;
 
         const result = convertCurrency(amount, currency);
 
         updateResult(result, currency);
-
     };
 
     const init = () => {
@@ -59,7 +52,6 @@
 
         form.addEventListener("submit", onFormSubmit);
         form.addEventListener("reset", resetResult);
-
     };
 
     init();
